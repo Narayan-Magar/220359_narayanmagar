@@ -1,26 +1,27 @@
-let myDAy = new Date().getDate();
-switch(myDAy){
+let myDay = new Date().getDay();
+switch (myDay) {
     case 0:
-    console.log("sunday");
-    break;
+        console.log("Sunday");
+        break;
     case 1:
-    console.log("monday");
-    break:
+        console.log("Monday");
+        break;
     case 2:
-    console.log("tuesday");
-    break;
+        console.log("Tuesday");
+        break;
     case 3:
-    console.log("wednesday");
-    break;
+        console.log("Wednesday");
+        break;
     case 4:
-    console.log("thursday");
-    break;
+        console.log("Thursday");
+        break;
     case 5:
-    console.log("friday");
-    break;
+        console.log("Friday");
+        break;
     case 6:
-    console.log("saturday");
-    break;
+        console.log("Saturday");
+        break;
     default:
-    console.log("error");
+        console.log("Error");
+        break;
 }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="register form" action="" onsubmit="return validateform()" method="post">
+    <label for="fname"></label>
+    <input type="text" name="fname">
+    <label for="password"></label>
+    <input type="password" name="password">
+    <br>
+    <input type="submit" value="submit">
+    <br>
+    </form>
+    <script>
+        function validateform(){
+            var fname = document.forms["registerform"]["fname"];
+            var password = document.forms["registerform"]["password"]
+            if (fname.value == ""){
+                alert("first name must be filled out");
+                fname.focus()
+                return false;
+            }
+            if (password.value.length < 8){
+                alert("password must be at least 8 characters")
+                password.focus();
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
